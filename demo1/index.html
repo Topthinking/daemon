@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>new web</title>
+  </head>
+  <body>
+    <script src="/static/index.js"></script>
+    <script type="text/javascript">
+      if (navigator.serviceWorker != null) {
+        navigator.serviceWorker.register('static/sw.js');
+      }
+    </script>
+  </body>
+</html>
