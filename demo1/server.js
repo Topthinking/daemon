@@ -15,12 +15,4 @@ app.use(async (ctx, next) => {
   await ctx.render('index');
 });
 
-https
-  .createServer(
-    {
-      cert: fs.readFileSync('./https.crt'),
-      key: fs.readFileSync('./https.key'),
-    },
-    app.callback(),
-  )
-  .listen(443);
+app.listen(3000);
