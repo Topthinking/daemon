@@ -1,1 +1,8 @@
-require('http').createServer((req,res)=>res.end('hello world')).listen(3000)
+require('http')
+  .createServer((q, s) => {
+    if (q.url == '/e') {
+      throw {};
+    }
+    s.end('hello world');
+  })
+  .listen(3000);
